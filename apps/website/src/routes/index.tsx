@@ -1,4 +1,4 @@
-import { component$ } from '@builder.io/qwik';
+import { component$, useTask$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 
 import Counter from '../components/starter/counter/counter';
@@ -6,8 +6,14 @@ import Hero from '../components/starter/hero/hero';
 import Infobox from '../components/starter/infobox/infobox';
 import Starter from '../components/starter/next-steps/next-steps';
 import { isBlank } from 'common';
+import { trpc } from '../trpc';
 
 export default component$(() => {
+  useTask$(async () => {
+    const { greeting } = await trpc.hello.query({ name: `Tom` });
+    console.log('🚀 ~ useTask$ ~ greeting:', greeting);
+    console.log('hello world');
+  });
   return (
     <>
       <Hero />

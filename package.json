@@ -8,8 +8,10 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "prepare": "husky",
+    "backend": "pnpm --filter backend",
     "common": "pnpm --filter common",
-    "website": "pnpm --filter website"
+    "website": "pnpm --filter website",
+    "dev": "pnpm run --parallel dev"
   },
   "lint-staged": {
     "**/*.{js,ts,tsx}": [
