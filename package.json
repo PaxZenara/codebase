@@ -2,15 +2,14 @@
   "name": "code",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/common.js",
-  "types": "./dist/main.d.ts",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "format": "prettier --write .",
     "prepare": "husky",
     "common": "pnpm --filter common",
-    "app": "pnpm --filter web-app"
+    "website": "pnpm --filter website"
   },
   "lint-staged": {
     "**/*.{js,ts,tsx}": [
