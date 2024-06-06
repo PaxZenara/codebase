@@ -14,8 +14,8 @@ export class TrpcRouter {
           name: z.string().optional(),
         }),
       )
-      .query((q: any) => {
-        const { name } = q.input as any;
+      .query((q) => {
+        const { name } = q.input;
         console.log('🚀 ~ TrpcRouter ~ .query ~ name:', name);
         return {
           greeting: `Hello ${name ? name : `Bilbo`}`,
