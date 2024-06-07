@@ -1,10 +1,10 @@
-import { createTRPCProxyClient, httpBatchLink } from '@trpc/client';
-import type { AppRouter } from '@backend/trpc/trpc.router';
+// import { createTRPCProxyClient, httpBatchLink } from '@trpc/client';
+// import type { AppRouter } from '@backend/trpc/trpc.router';
 
-export const trpc = createTRPCProxyClient<AppRouter>({
-  links: [
-    httpBatchLink({
-      url: 'http://localhost:3000/trpc', // you should update this to use env variables
-    }),
-  ],
-});
+// export const trpc = createTRPCProxyClient<AppRouter>({
+//   links: [
+//     httpBatchLink({
+//       url: 'http://localhost:3000/trpc', // you should update this to use env variables
+//     }),
+//   ],
+// });

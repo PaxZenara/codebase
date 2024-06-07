@@ -1,20 +1,20 @@
-import { component$, useTask$ } from '@builder.io/qwik';
+import { component$ } from '@builder.io/qwik';
 import type { DocumentHead, RequestEvent } from '@builder.io/qwik-city';
 
-import { trpc } from '../trpc';
+// import { trpc } from '../trpc';
 
 export const onGet = async ({ redirect }: RequestEvent) => {
   throw redirect(307, '/coming-soon');
 };
 
 export default component$(() => {
-  useTask$(async () => {
-    const { greeting } = await trpc.hello.query({ name: `Tom` });
-    console.log('🚀 ~ useTask$ ~ greeting:', greeting);
-    console.log('hello world');
-  });
+  // useTask$(async () => {
+  //   const { greeting } = await trpc.hello.query({ name: `Tom` });
+  //   console.log('🚀 ~ useTask$ ~ greeting:', greeting);
+  //   console.log('hello world');
+  // });
 
-  return <></>;
+  return <>Welcome to PaxZenara</>;
 });
 
 export const head: DocumentHead = {
