@@ -52,11 +52,16 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Pax Zenara | Coming Soon',
+  title: 'Pure Indulgence Awaits | Luxurious Natural Gift Hampers Coming Soon',
   meta: [
     {
       name: 'description',
-      content: 'Qwik site description',
+      content:
+        'Discover our exclusive gift hampers with luxurious natural soaps, bath scrubs, and salts. Indulge in pure self-care bliss. Stay tuned for our launch!',
+    },
+    {
+      name: 'keywords',
+      content: 'coming soon',
     },
   ],
 };

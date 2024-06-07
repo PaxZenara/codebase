@@ -1,6 +1,6 @@
 import { component$, Slot, useStyles$ } from '@builder.io/qwik';
 import { routeLoader$ } from '@builder.io/qwik-city';
-import type { RequestHandler } from '@builder.io/qwik-city';
+import type { DocumentHead, RequestHandler } from '@builder.io/qwik-city';
 
 // import Header from '../components/starter/header/header';
 // import Footer from '../components/starter/footer/footer';
@@ -41,3 +41,20 @@ export default component$(() => {
     </>
   );
 });
+
+export const head: DocumentHead = ({ head }) => {
+  return {
+    title: `Pax Zenara | ${head.title}`,
+    meta: [
+      {
+        name: 'keywords',
+        content:
+          'gift hampers, natural soaps, bath scrubs, bath salts, luxurious self-care, natural skincare, handcrafted bath products, pure indulgence',
+      },
+      {
+        name: 'author',
+        content: 'Pax Zenara',
+      },
+    ],
+  };
+};
