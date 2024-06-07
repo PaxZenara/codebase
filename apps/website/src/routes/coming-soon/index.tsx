@@ -2,6 +2,7 @@ import { component$ } from '@builder.io/qwik';
 import CompanyNameLogo from '../../media/company-name.svg?jsx';
 import Logo from '../../media/PaxZenara.svg?jsx';
 import Enara from '../../media/zEnara.webp?jsx';
+import type { DocumentHead } from '@builder.io/qwik-city';
 
 export default component$(() => {
   return (
@@ -49,3 +50,13 @@ export default component$(() => {
     </div>
   );
 });
+
+export const head: DocumentHead = {
+  title: 'Pax Zenara | Coming Soon',
+  meta: [
+    {
+      name: 'description',
+      content: 'Qwik site description',
+    },
+  ],
+};
