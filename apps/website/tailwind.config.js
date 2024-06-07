@@ -3,6 +3,7 @@ const { join } = require('path');
 /** @type {import('tailwindcss').Config} */
 
 export default {
+  presets: [require(join(__dirname, '../../tailwind-config.base'))],
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
@@ -14,5 +15,4 @@ export default {
     },
   },
   plugins: [],
-  presets: [require(join(__dirname, '../../tailwind-config.base'))],
 };
