@@ -2,5 +2,6 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "cSpell.words": ["Trpc"],
-  "prettier.singleQuote": true
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true
 }

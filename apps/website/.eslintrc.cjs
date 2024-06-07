@@ -7,6 +7,7 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
+    'plugin:prettier/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:qwik/recommended',
   ],
@@ -38,5 +39,13 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': ['error'],
     '@typescript-eslint/consistent-type-imports': 'warn',
     '@typescript-eslint/no-unnecessary-condition': 'warn',
+    'prettier/prettier': [
+      'error',
+      {
+        singleQuote: true,
+        endOfLine: 'auto',
+        trailingComma: 'all',
+      },
+    ],
   },
 };
