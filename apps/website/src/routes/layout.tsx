@@ -29,9 +29,14 @@ export default component$(() => {
   return (
     <>
       {/* <Header /> */}
-      {/* <main> */}
-      <Slot />
-      {/* </main> */}
+      <main
+        class="dark h-screen text-primary-800 dark:bg-stone-800 dark:text-primary-500"
+        // style={{
+        //   backgroundImage: "url('../images/coming-soon-bg.webp')",
+        // }}
+      >
+        <Slot />
+      </main>
       {/* <Footer /> */}
     </>
   );

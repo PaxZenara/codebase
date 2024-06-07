@@ -1,7 +1,8 @@
-export default {
+module.exports = {
+  darkMode: 'class',
   theme: {
-    extends: {
-      color: {
+    extend: {
+      colors: {
         'irish-coffee': {
           50: '#fbf9eb',
           100: '#f5f2cc',
@@ -28,7 +29,7 @@ export default {
           900: '#503933',
           950: '#2d1e1b',
         },
-        dallas: {
+        primary: {
           50: '#f9f7ed',
           100: '#f0ead1',
           200: '#e3d4a5',

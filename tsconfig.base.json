@@ -12,6 +12,7 @@
     "noFallthroughCasesInSwitch": true,
     "paths": {
       "@backend/*": ["./apps/backend/src/*"],
+      "@assets/*": ["./assets/*"],
       "@website/*": ["./apps/website/src/*"]
     }
   }
