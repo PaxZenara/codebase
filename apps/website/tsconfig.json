@@ -12,7 +12,10 @@
     "esModuleInterop": true,
     "isolatedModules": true,
     "outDir": "tmp",
-    "noEmit": true
+    "noEmit": true,
+    "paths": {
+      "~/*": ["./src/*"]
+    }
   },
   "files": ["./.eslintrc.cjs"],
   "include": ["src", "./*.d.ts", "./*.config.ts"]

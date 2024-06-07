@@ -1,7 +1,7 @@
 import { component$ } from '@builder.io/qwik';
-import CompanyNameLogo from '@assets/images/comapny-name.svg?jsx';
-import Logo from '@assets/images/PaxZenara.svg?jsx';
-import Enara from '@assets/images/zEnara.webp?jsx';
+import CompanyNameLogo from '../../media/company-name.svg?jsx';
+import Logo from '../../media/PaxZenara.svg?jsx';
+import Enara from '../../media/zEnara.webp?jsx';
 
 export default component$(() => {
   return (
